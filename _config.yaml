@@ -1,0 +1,20 @@
+title: ~/pustakh.blog
+author:
+  name: pustakh
+  email: physicist.artist@gmail.com
+description: >
+  pustakh, writing my experiences.
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+minima:
+  skin: auto
+header_pages:
+  - list.md
+  - tags.md
+  - microblog.md
+  - quotes.md
+paginate: 10
+paginate_path: "/blog/page:num/"
