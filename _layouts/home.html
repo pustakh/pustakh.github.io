@@ -30,7 +30,7 @@ layout: default
           <a class="post-link" href="{{ post.url | relative_url }}">
             {{ post.title | escape }}
           </a>
-          {{ post.description }}
+          {% if post.description %}{{ post.description }}<br/>{% endif %}
           {%- for tag in post.tags -%}
           <a href="{{ "/tags#" | append: tag | relative_url }}">#{{ tag }}</a>&nbsp;
           {%- endfor -%}
